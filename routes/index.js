@@ -8,7 +8,13 @@ router.get('/', function(req, res, next) {
 
 // Pagina de creditos
 router.get('/author', function(req, res, next) {
-    res.render('author');
+    res.render('author', {
+        author: "Pablo Caraballo Llorente y José Antonio Llamas Luciañez"
+    });
+});
+
+router.get('/help', function (req, res, next) {
+   res.render('help');
 });
 
 module.exports = router;
